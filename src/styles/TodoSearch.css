@@ -1,0 +1,51 @@
+.float__container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;  
+}
+
+.todo__counter {
+  position: absolute;
+  bottom: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+  background-color: var(--orange);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.todo__counter h2 {
+  margin-bottom: 22px;
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  color: #fff;
+}
+
+.todo__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.todo__search form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.todo__search form button {
+  padding: 10px;
+  color:#fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--green-dark);
+  cursor: pointer;
+}
+
+.todo__search form button:hover {
+  background-color: var(--green-black);
+}

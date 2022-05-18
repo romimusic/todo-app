@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 180px;
+  padding: 0 28px;
+  border-radius: 0 0 430px 430px;
+  background-color: #059dac;
+  color: #eefcfc;
+}
+
+.header__logo .material-icons {
+  margin-top: 1.4rem;
+  font-size: 3.2rem;
+}
+
+.header__profile-figure {
+  margin-top: 1.4rem;
+  font-size: var(--font-size-medium);
+}
