@@ -1,16 +1,32 @@
-import '../styles/TodoSearch.css';
-import TodoSearch from './TodoSearch';
+import "../styles/TodoCounter.css";
 
-const TodoCouter = () => {
+const TodoCounter = ({
+  completed,
+  alls,
+  searchValue,
+  setSearchValue,
+}) => {
+  const searchValueChanged = (event) => {
+    setSearchValue(event.target.value);
+  };
+
   return (
-    <div className='float__container'>
+    <div className="float__container">
       <section className="todo__counter">
-        <h2> You've completed 3 of 5 task </h2>
-        <TodoSearch />
+        <h2>
+          You've completed {completed} of {alls} tasks
+        </h2>
+        <section className="todo__search">
+          <input
+            type="text"
+            placeholder="Search"
+            value={searchValue}
+            onChange={searchValueChanged}
+          />
+        </section>
       </section>
-      
     </div>
-  )
-}
+  );
+};
 
-export default TodoCouter;
+export default TodoCounter;

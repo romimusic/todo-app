@@ -26,26 +26,23 @@
 
 .todo__search {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.todo__search form input {
+.todo__search input {
+  width: 75%;
   padding: 10px;
   border: none;
-  border-radius: 5px 0 0 5px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
-.todo__search form button {
-  padding: 10px;
-  color:#fff;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  background-color: var(--green-dark);
-  cursor: pointer;
-}
-
-.todo__search form button:hover {
-  background-color: var(--green-black);
+.todo__search p {
+  margin-top: 22px;
+  font-size: var(--font-size-medium);
+  text-align: left;
+  color: var(--white);
 }

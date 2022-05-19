@@ -7,13 +7,18 @@ const Header = () => {
     <header className="header">
       <section className="header__logo">
         <span className="material-icons">home</span>
+        <span className="material-icons">account_circle</span>
       </section>
 
-      <section className="header__profile">
+      {/* <section className="header__profile">
         <figure className="header__profile-figure">
-          <img className="header__profile-image" src="../img/avatar.jpg" alt="Profile" />
+          <img
+            className="header__profile-image"
+            src="../../public/avatar.jpg"
+            alt="Profile"
+          />
         </figure>
-      </section>
+      </section> */}
     </header>
   );
 }

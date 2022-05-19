@@ -45,7 +45,13 @@ ul {
   width: 80px;
 }
 
-.todo__task-list ul li .todo__list-icons .material-icons {
+.todo__task-list ul li .todo__list-icons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.todo__task-list ul li .todo__list-icons button .material-icons {
   font-size: var(--font-size-large);
   color: var(--green-dark);
   cursor: pointer;
