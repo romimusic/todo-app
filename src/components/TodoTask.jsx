@@ -1,13 +1,8 @@
+
 import "../styles/TodoList.css";
 
-const TodoTask = ({ text }) => {
-  const onComplete = () => {
-    console.log("Task completed");
-  };
 
-  const onRemove = () => {
-    console.log("Task removed");
-  };
+const TodoTask = ({ text, onComplete, onRemove }) => {
 
   return (
     <li>
@@ -17,7 +12,7 @@ const TodoTask = ({ text }) => {
           <span className="material-icons">check_box</span>
         </button>
         <button onClick={onRemove}>
-          <span className="material-icons">delete_forever</span>
+          <span className="material-icons delete">delete_forever</span>
         </button>
       </div>
     </li>

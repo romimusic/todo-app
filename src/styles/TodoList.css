@@ -57,8 +57,8 @@ ul {
   cursor: pointer;
 }
 
-.todo__task-list ul li .todo__list-icons .material-icons:nth-child(2) {
-  color: rgb(240, 2, 2)
+.delete {
+  color: rgb(240, 2, 2) !important;
 }
 
 
