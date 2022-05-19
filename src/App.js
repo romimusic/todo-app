@@ -9,24 +9,6 @@ import "../src/styles/App.css";
 import TodoTask from "./components/TodoTask";
 import CreateTodo from "./components/CreateTodo";
 
-// const arrayTask = [
-//   {
-//     text: "React",
-//     completed: true,
-//   },
-//   {
-//     text: "Tailwind",
-//     completed: false,
-//   },
-//   {
-//     text: "Hooks",
-//     completed: false,
-//   },
-//   {
-//     text: "Patience",
-//     completed: false,
-//   },
-// ];
 
 function App() {
   const localStorageTasks = localStorage.getItem("ALLTASKS_V1");
